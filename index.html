@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./shahad /styles.css">
+    <link rel="stylesheet" href="./shahad /om.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts kombineret i én link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Portfolio</title>
+
+
+</head>
+
+<body>
+    <!-- her starter min header-->
+    <header>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#hero-image">Hjem</a>
+            <a href="#om-mig">Om mig</a>
+            <a href="#projekter">Projekter</a>
+            <a href="./images/CV  Shahad.pdf" target="_blank" class="c-v">
+                CV</a>
+            <a href="#contact">Kontakt</a>
+        </div>
+        <span style="cursor:pointer;float: right;" onclick="openNav()"><img class="menu" src="./images/menu.svg">
+        </span>
+
+        <img class="logo" src="./images/logo.svg" alt="">
+
+    </header>
+    <!--her sluter min header-->
+
+    <div id="hero-image">
+        <img class="sideimag" src="./images/hero,sideimag.png" alt="">
+        <div class="text-container">
+            <h2 id="headline">velkommen til min verden</h2>
+            <h1>Mit navn er Shahad,</h1>
+            <h1>og jeg er <span>Webudvikler</span></h1>
+            <h2 id="changingH2">Beskrives ofte som <br></h2>
+            <div class="icons">
+                <a href="https://github.com/Shahad1991"><img src="./images/github.svg.svg" alt="GitHub icon"></a>
+                <a href="https://www.instagram.com/shahadnazaromhassoni/"><img src="./images/Vector.svg"
+                        alt="Instagram icon"></a>
+                <a href="https://www.linkedin.com/in/shahad-al-jawashee-41502a24b/"><img src="./images/linkdin.svg"
+                        alt="LinkedIn icon"></a>
+            </div>
+        </div>
+        <div class="hero-img-container">
+            <img class="hero-img" src="./images/myimag.png" alt="Hero image">
+        </div>
+    </div>
+
+    <div class="projekts-container" id="projekter">
+        <div class="my-projekts">
+            <h1 class="min-h1">Mine projekter</h1>
+            <h4 class="min">et indblik i mine kreative projekter </h4>
+        </div>
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterSelection('all')">Alle</button>
+            <button class="filter-btn" onclick="filterSelection('school')">Skole Projekter</button>
+            <button class="filter-btn" onclick="filterSelection('personal')">Personlige Projekter</button>
+        </div>
+
+        <div id="project-list" class="card-container">
+            <div class="card project-container school">
+                <img class="img-card" src="./images/e-commerce.png" alt="">
+                <div class="intro">
+                    <h1 class="projekts-h1">E -Commerce</h1>
+                    <p>Vi arbejdede med Lean Startup-processen for at designe en unik T-shirt og lancere en webshop,
+                        hvor vi sælger produktet. Ideen var at skabe et unikt design og markedsføre det via sociale
+                        medier. Vi opbyggede en online kanal på Instagram, <a
+                            href="https://www.instagram.com/noodledoodlezoo/">Noodle Doodle Zoo</a>, hvor vi fokuserede
+                        på at markedsføre produktet og vise vores kollektion.
+                        <br>Min rolle i projektet omfattede:
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            Idegenerering/Ideudvikling
+                        </li>
+                        <li>
+                            Gennemførelse af interviews og tests
+                        </li>
+                        <li>
+                            Arbejde med storytelling
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="card project-container school">
+                <img class="img-card" src="./images/app.png" alt="">
+                <div class="intro">
+                    <h1 class="projekts-h1">Iværksætteridé</h1>
+                    <p>Til mit afsluttende projekt i multimediedesign udviklede jeg en iværksætteridé, hvor jeg gennem
+                        grundig research fandt potentialet for en app til håndværkere. Jeg stod for hele processen, fra
+                        idéudvikling og design til kodning og markedsføring af B2B-produktet, og integrerede både Lean
+                        Startup- og Design Thinking-modellerne i arbejdet.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card project-container school">
+                <img class="img-card" src="./images/kogehandel.png" alt="">
+                <div class="intro">
+                    <h1 class="projekts-h1">UX</h1>
+                    <p>Vi samarbejdede med Køge Handel om at øge kundetrafikken. Gennem UX-research identificerede vi
+                        problemer som uklare parkeringsregler og navigationsvanskeligheder. Løsningen blev en QR-kode,
+                        der hjælper besøgende med at finde regler og butikker.
+                        <br>Min rolle i projektet omfattede:
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            Gennemførelse af interviews og desk research
+                        </li>
+                        <li>
+                            Udvikling af personas og brugerrejser
+                        </li>
+                        <li>
+                            Idegenerering/ Test af løsningen
+                        </li>
+                        <li>
+                            Kodning af en del af prototypen
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card project-container school">
+                <img class="img-card" src="./images/2sem.png" alt="">
+                <div class="intro">
+                    <h1 class="projekts-h1">Opbygning af Hjemmeside</h1>
+                    <p>Her har vi samarbejdet med,
+                        <a href="http://www.hmi-tomrermester.dk/"> hmi-tomremester </a>
+                        Sammen
+                        udviklede vi en imponerende hjemmeside og en målrettet social medie strategi til en start-up
+                        tømrervirksomhed. Endvidere kunne vi stolt præsentere en velformuleret hjemmeside til vores
+                        kunde.<br> Min rolle i projektet omfattede:
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            Undersøgelse af målgruppen/interviews
+                        </li>
+                        <li>
+
+                            Udvikling af markedsføringsstrategi
+
+                        </li>
+                        <li>
+                            Finde farver og skrifttype/ Design af prototyper
+                        </li>
+                        <li>
+                            Kodning af dele af projektetn
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card project-container school">
+                <img class="img-card" src="./images/golf.png" alt="">
+                <div class="intro">
+                    <h1 class="projekts-h1">Optimering af Hjemmeside</h1>
+                    <p>
+                        Vi har samarbejdet med en kunde, som driver hjemmesiden <a href="https://www.golfacross.com/">
+                            GolfAcross</a>, hvor målgruppen er golfspillere.
+                        Vores opgave var at optimere hjemmesiden ved at gennemføre omfattende tests af både appen og
+                        hjemmesiden. Målet var at identificere problemer og derefter arbejde målrettet på at løse dem.
+                        <br> Min rolle i projektet omfattede:
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            Gennemførelse af interviews og tests
+                        </li>
+                        <li>
+                            Udarbejdelse af personaer og brugerrejser
+                        </li>
+                        <li>
+                            Kodning af dele af prototypen
+                        </li>
+                        <li>
+                            Idegenerering
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card project-container school">
+                <img class="img-card" src="./images/bookingsystem.png" alt="">
+                <div class="intro">
+                    <h1 class="projekts-h1">Opbygning af Bookingsystem</h1>
+                    <p>
+                        På tredje semester af multimediedesign har jeg samarbejdet med en kollega om at designe og udvikle et nyt bookingsystem til en psykiatrisk hjemmeside. Projektet involverede tæt samarbejde med kunden og omfattede hele processen fra UX-research og design til kodning af prototypen, hvor fokus var at forbinde systemet til en database ved hjælp af Firebase.
+                        <br> Min rolle i projektet omfattede:
+                    </p>
+                    <ul class="feature-list">
+                        <li>
+                            logodesign
+                        </li>
+                        <li>
+                            Udarbejdelse af personaer og brugerrejser
+                        </li>
+                        <li>
+                            Kodning af dele af prototypen
+                        </li>
+                        <li>
+                            Idegenerering og forbindelse med database
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card project-container personal">
+                <img class="img-card" src="./images/logodesign.png" alt="">
+                <div class="intro">
+                    <h1 class="projekts-h1">Logo Design</h1>
+                    <p>Jeg har designet et logo til en tømrerfirma, der er både enkelt og nemt at huske.
+                        Logoet blev brugt på arbejdstøj, arbejdsbil og visitkort.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="card project-container personal">
+                <img class="img-card" src="./images/bilreklame.png" alt="">
+                <div class="intro">
+                    <h1 class="projekts-h1">Design af Bilreklame</h1>
+                    <p>Som en del af mit designlærlingarbejde har jeg designet en bilreklame for en kunde. Fokus var på
+                        at vælge farver og skrifttyper, som allerede er brugt på kundens hjemmeside, for at sikre en
+                        sammenhængende visuel identitet. Reklamen præsenterer informationen klart og tydeligt, og sigter
+                        mod at øge synligheden og tiltrække flere kunder</p>
+                </div>
+                <img src="./images/hmi-bil.png" alt="">
+            </div>
+
+            <div class="card project-container personal">
+                <img class="img-card" src="./images/some.png" alt="">
+                <div class="intro">
+                    <h1 class="projekts-h1">Content Creation</h1>
+                    <p>I min fritid arbejder jeg med content creation for<a
+                            href="https://www.instagram.com/hmitomrermester/">
+                            HMI Tømrermester</a>på deres
+                        erhvervs-Instagram-konto. <br>Mine opgaver omfatter</p>
+                    <ul class="feature-list">
+                        <li>
+                            Design af Instagram highlights
+
+                        </li>
+                        <li>
+                            Desk research og idegenerering
+
+                        </li>
+                        <li>
+                            Fotografering af projekter
+                        </li>
+                        <li>
+                            Videoproduktion og -redigering
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="card project-container personal">
+                <img class="img-card" src="./images/visitkort.png" alt="">
+                <div class="intro">
+                    <h1 class="projekts-h1">Design af Visitkort</h1>
+                    <p>Jeg har designet et visitkort, der hjælper kunden med at nå ud til sin målgruppe. Fokus var på at
+                        skabe et professionelt og mindeværdigt design, der effektivt kommunikerer kundens budskab og
+                        brandidentitet.</p>
+                </div>
+            </div>
+
+
+            <div class="card project-container personal">
+                <img class="img-card" src="./images/bilreklam2.png" alt="">
+                <div class="intro">
+                    <h1 class="projekts-h1">Bilreklame</h1>
+                    <p>Jeg samarbejdede med Bygg og renovere om at udvikle en bilreklame, der afspejler deres
+                        brandidentitet og
+                        harmonerer med designet på deres hjemmeside.</p>
+                </div>
+            </div>
+
+            <div class="card project-container personal">
+                <img class="img-card" src="./images/logodesign2.png" alt="">
+                <div class="intro">
+                    <h1 class="projekts-h1">Logo Design</h1>
+                    <p>Jeg har designet et logo til et tømrerfirma med fokus på enkelhed og genkendelighed. Logoet er
+                        skabt til at være professionelt og anvendeligt på arbejdstøj, køretøjer og
+                        markedsføringsmaterialer, alt sammen for at tydeligt afspejle virksomhedens brand.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-container" id="contact">
+        <div class="contact-side">
+            <h2>glæder mig til at høre fra dig!</h2>
+            <div>
+                <img src="images/Envelope.svg" alt="">
+                <h4><a href="mailto:shahad1nazar@gmail.com">shahad1nazar@gmail.com</a></h4>
+            </div>
+            <div>
+                <img src="images/PhoneOutgoing.svg" alt="">
+                <h4><a href="Tel: +4522316322">22 31 63 22</a></h4>
+            </div>
+            <div>
+                <img src="images/MapPinLine.svg" alt="">
+                <h4><a href="">Vibevej 7, 2630 Taastrup</a></h4>
+            </div>
+        </div>
+
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <h4 class="kontakt-h4">Kontakt</h4>
+            <input type="hidden" name="access_key" value="6f66cf3b-a9a5-4d5e-87b9-0e7146b8a8b3">
+            <input type="text" name="name" placeholder="Navn" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <textarea name="message" rows="5" placeholder="Skriv en besked"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        
+    </div>
+
+
+    <img class="stiky-background" src="./images/background.png" alt="">
+    <div class="om-mig" id="om-mig">
+        <img src="./images/my.jpeg" alt="personal image">
+        <div class="tekst">
+            <h1 class="special-h1">Om mig</h1>
+            <h4 class="min"> en kort rejse gennem min baggrund, passioner og visioner </h4>
+            <p> Jeg er en ambitiøs og kreativ
+                multimediedesigner med en passion
+                for digital udvikling. Min
+                interesse for
+                teknologi og design har drevet mig til at vælge digital udvikling som en valgfag under mit Uddannelse
+                som
+                multimediedesigner. Jeg er en teamplayer og nyder at arbejde med andre kreative fagfolk i mit
+                projektarbejde. Jeg værdsætter feedback og er altid åben for at lære og udvikle mig. <br>
+                Jeg er god til at effektivt planlægge min tid. Min tendens til at skabe struktur hjælper mig med at
+                organisere mine omgivelser og opgaver på en velordnet måde.
+                Jeg er overbevist om, at opmærksomhed for detaljer er afgørende for at levere arbejde af høj kvalitet.
+                <br>
+                Yderligere har jeg en hobby inden for fotografering. Jeg nyder at fange
+                øjeblikke og skabe visuelle historier med mine fotografier.
+                Denne hobby har lært mig at observere verden på en anden måde og se skønheden i de små
+                detaljer. Ikke mindst giver mig mulighed for at skabe visuelt tiltalende og meningsfulde
+                oplevelser for brugerne.
+            </p>
+
+            <a href="./images/CV  Shahad.pdf" target="_blank" class="c-v">
+                min CV
+            </a>
+
+        </div>
+    </div>
+    <!--her slutter min del om OM MIG-->
+    <img class="stiky-background" src="./images/background.png" alt="">
+    <div class="anmeldelse">
+        <h1 class="min-h1">Det siger andre om mig</h1>
+        <h4 class="min"> ærlige ord fra dem, jeg har samarbejdet med</h4>
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <q>Shahad har været et aktiv gruppemedlem med gode kommunikationsevner. Hun har været hurtigt
+                    til at løse
+                    problemer både når hun arbejder alene eller som en gruppe. Shahad er altid smilende og
+                    imødekommende,
+                    specielt hvis man har spørgsmål eller vil have hjælp. Hun har været fantastisk at have som
+                    gruppemedlem</q>
+                <p class="author">- Fatime/studiekammerat</p>
+            </div>
+
+            <div class="mySlides">
+                <q>Jeg har arbejdet med Shahad på flere projekter under vores uddannelse.Shahad er positiv og aktiv
+                    person og dejligt, god samarbejde og kommunikation i gruppen</q>
+                <p class="author">- Areen/studiekammerat</p>
+            </div>
+
+            <div class="mySlides">
+                <q>Jeg er utroligt begejstret for at dele min oplevelse med Shahad's fantastiske arbejde på at designe
+                    en
+                    hjemmeside til mig. Hendes dedikation, professionalisme og kreative flair har virkelig imponeret
+                    mig, og
+                    resultatet har overgået alle mine forventninger</q>
+                <p class="author">- HMI
+                    tømrermester/Kunde</p>
+            </div>
+
+            <div class="mySlides">
+                <q>Jeg har haft muligheden for at arbejde sammen med Shahad i løbet af vores multimediestudier. Shahad
+                    er en meget venlig og målrettet person. Hun løser problemer med en brugercentreret tilgang og bruger
+                    alle tilgængelige data og oplysninger til at finde den rette løsning for opgaven og klienten <span
+                        id="dots">... </span><span id="more">Med
+                        hendes lederegenskaber fik vi altid tingene gjort til tiden. Med et skarpt øje for design og
+                        funktion hjalp hun holdet med at skride fremad og bidrog til at løse de aktuelle problemer. Med
+                        en
+                        kreativ tilgang og gode samarbejdsevner var det altid en fornøjelse at arbejde sammen med
+                        hende.<br></span>
+
+                    <button onclick="myFunction()" id="myBtn">Læs mere</button>
+                </q>
+
+                <p class="author">- Lisa/studiekammerat</p>
+            </div>
+
+            <div class="mySlides">
+                <q>
+                    During her internship, Shahad demonstrated a positive attitude towards learning. She was always
+                    willing to assist with tasks and showed initiative in finding solutions to challenges encountered
+                    with web implementation...
+                    <button a href="./images/Reference Letter - Shahad.pdf" target="_blank" class="pdf-link">læs hele
+                        reference
+                        letter</button></a>
+                </q>
+
+                <p class="author">- Tina/Moonraker</p>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+
+        </div>
+
+    </div>
+    <a href="#hero-image" class="scroll-to-top-btn">
+        <img src="./images/ArrowSquareUp.svg" alt="Tilbage til Hjem" class="scroll-icon">
+    </a>
+
+
+    <footer>
+        <div class="footer-icons">
+            <a href="https://github.com/Shahad1991"><img src="./images/github.svg.svg" alt="github icon">
+            </a>
+            <a href="https://www.instagram.com/shahadnazaromhassoni/"><img src="./images/Vector.svg"
+                    alt="instagram icon"></a>
+            <a href="https://www.linkedin.com/in/shahad-al-jawashee-41502a24b/"><img src="./images/linkdin.svg"
+                    alt="linkdin icon">
+            </a>
+        </div>
+        <ul>
+            <a href="#hero-image">Hjem</a>
+            <a href="#om-mig">Om</a>
+            <a href="#projekter">Projekter</a>
+            <a href="#contact">Kontakt</a>
+        </ul>
+        <p>&copy; 2024 Shahad. All rights reserved</p>
+
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+
+    <script>
+
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        // Funktion til at lukke menuen
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+
+    <script>
+        function filterSelection(category) {
+            var projects, i;
+            projects = document.getElementsByClassName("project-container");
+
+            // Hvis kategorien er 'all', vis alle projekter; ellers, vis kun de projekter, der matcher kategorien
+            if (category === "all") category = "";
+
+            // Loop igennem alle projekter og skjul dem, der ikke matcher kategorien
+            for (i = 0; i < projects.length; i++) {
+                removeClass(projects[i], "show");
+                if (projects[i].className.indexOf(category) > -1) addClass(projects[i], "show");
+            }
+
+            // Opdatering af aktive filterknapper
+            var buttons = document.getElementsByClassName("filter-btn");
+            for (i = 0; i < buttons.length; i++) {
+                buttons[i].classList.remove("active");
+            }
+            event.currentTarget.classList.add("active");
+        }
+
+        function addClass(element, name) {
+            var arr1 = element.className.split(" ");
+            var arr2 = name.split(" ");
+            for (var i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function removeClass(element, name) {
+            var arr1 = element.className.split(" ");
+            var arr2 = name.split(" ");
+            for (var i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Standardvisning af alle projekter
+        filterSelection("all");
+    </script>
+
+    <script> // Funktion til at vise det aktuelle slide
+        var slideIndex = 1;
+        var slideInterval;
+
+        document.addEventListener("DOMContentLoaded", function () {
+            showSlides(slideIndex); // Vis første slide
+            startAutoSlide(); // Start automatisk slideshow
+        });
+
+        // Funktion til at ændre slide ved at tilføje eller trække fra slideIndex
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+            resetAutoSlide(); // Genstart automatisk slideshow ved manuel navigation
+        }
+
+        // Funktion til at sætte det aktuelle slide baseret på dot, der blev klikket på
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+            resetAutoSlide(); // Genstart automatisk slideshow ved manuel navigation
+        }
+
+        // Funktion til at vise det aktuelle slide
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) { slideIndex = 1; }
+            if (n < 1) { slideIndex = slides.length; }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        // Start automatisk slideshow
+        function startAutoSlide() {
+            slideInterval = setInterval(function () {
+                plusSlides(1);
+            }, 10000); // Ændrer slide hvert 5. sekund
+        }
+
+        // Stop automatisk slideshow
+        function stopAutoSlide() {
+            clearInterval(slideInterval);
+        }
+
+        // Genstart automatisk slideshow ved manuel navigation
+        function resetAutoSlide() {
+            stopAutoSlide();
+            startAutoSlide();
+        }
+
+    </script>
+
+
+    <script src="./index.js"></script>
+    
+
+</body>
+
+</html>

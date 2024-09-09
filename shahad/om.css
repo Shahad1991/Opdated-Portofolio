@@ -1,0 +1,197 @@
+.om-mig {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+    background-color: #3B425F;
+}
+
+/* Styling for billedet */
+.om-mig img {
+    width: 50%;
+    margin: 30px;
+    border: 2px solid;
+    border-radius: 30px;
+    border-color: #EED5A2;
+}
+
+/* Styling for teksten */
+.tekst {
+    padding: 20px;
+}
+
+
+
+.om-mig p {
+    margin-bottom: 25px;
+}
+
+.c-v {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #22273B;
+    background-color: #F0D2C7;
+    transition: background-color 0.3s;
+}
+
+/* Slideshow container */
+
+
+.anmeldelse {
+    margin-bottom: 80px;
+    min-height: 300px;
+    max-height: 400px;
+
+}
+
+.stiky-background {
+    height: 100px;
+}
+
+.slideshow-container {
+    position: relative;
+    height: fit-content;
+
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    padding: 50px;
+    text-align: center;
+    margin: 50px;
+    border: #3B425F;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px #f1f1f1;
+    background-color: #3B425F;
+}
+
+#more {
+    display: none;
+}
+
+.mySlides #myBtn {
+    background-color: #3B425F;
+    border: none;
+    font-family: "Jost", sans-serif;
+    font-style: italic;
+    color: #EED5A2;
+    font-weight: 200;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #EED5A2;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: #22273B;
+    color: white;
+    box-shadow: 5px 5px 20px #f1f1f1;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    background-color: #f0f0f0;
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.dot:hover {
+    background-color: #3B425F;
+}
+
+/* Add an italic font style to all quotes */
+q {
+    font-style: italic;
+    font-family: "Jost", sans-serif;
+    color: #f0f0f0;
+
+}
+
+.author {
+    color: #F0D2C7;
+    font-family: "Caveat", cursive;
+    margin-top: 20px;
+}
+
+.pdf-link {
+    background-color: #3B425F;
+    border: none;
+    font-family: "Jost", sans-serif;
+    font-style: italic;
+    color: #EED5A2;
+    font-weight: 200;
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+
+.pdf-link:hover {
+    text-decoration: underline;
+}
+
+/* Media query for større skærme */
+@media (min-width: 768px) {
+    .om-mig {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .om-mig img {
+        width: 40%;
+        margin: 0;
+    }
+
+    .tekst {
+        max-width: 50%;
+    }
+
+    .tekst h4 {
+        text-align: left;
+    }
+}
